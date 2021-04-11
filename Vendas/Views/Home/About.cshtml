@@ -1,7 +1,21 @@
 ﻿@{
+
+    //Bloco C#, PARTE DO CÓDIGO QUE COLOCAR OS CÓDIGOS NA VIEW.
     ViewData["Title"] = "About";
+
+
+
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
+
+<h4>@ViewData["email"]</h4>
+<!--- Criando as views que vão ser mostradas de acordo com a lógica dentro do método About dentro do controller. -->
+
 <p>Use this area to provide additional information.</p>
+<p>@ViewData["estuda"]</p>
+<address>
+    <strong>More Information: </strong>
+    <a href="https://github.com/Mariengca27?tab=repositories">Repositório da Mariana </a>
+</address>

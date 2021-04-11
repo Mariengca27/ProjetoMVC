@@ -18,7 +18,9 @@ namespace Vendas.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
-
+            ViewData["email"] = "mariengca27@gmail.com";
+            ViewData["estuda"] = "Estudante de Engenharia de Controle e Automação + Dev Arriscada."
+ 
             return View();
         }
 

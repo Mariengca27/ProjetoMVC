@@ -13,7 +13,7 @@ namespace Vendas
     public class Program
     {
         public static void Main(string[] args)
-            //Point da aplicação. 
+            
         {
             CreateWebHostBuilder(args).Build().Run();
         }
