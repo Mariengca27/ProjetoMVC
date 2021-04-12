@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Vendas.Models;
+using Vendas.Models.ViewModels;
 
 namespace Vendas.Controllers
 {
@@ -19,7 +19,7 @@ namespace Vendas.Controllers
         {
             ViewData["Message"] = "Your application description page.";
             ViewData["email"] = "mariengca27@gmail.com";
-            ViewData["estuda"] = "Estudante de Engenharia de Controle e Automação + Dev Arriscada."
+            ViewData["estuda"] = "Estudante de Engenharia de Controle e Automação + Dev Arriscada.";
  
             return View();
         }
@@ -39,7 +39,7 @@ namespace Vendas.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new Vendas.Models.ViewModels.ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
